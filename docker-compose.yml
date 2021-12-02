@@ -1,0 +1,12 @@
+version: '3'
+services:
+  pyapp:
+    container_name: tzem_python_app
+    image: tzem/pyapp:v0
+    restart: always
+    build: .
+    ports:
+      - '8080:8080'
+    expose:
+      - '8080'
+
